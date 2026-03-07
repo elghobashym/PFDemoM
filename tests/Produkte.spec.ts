@@ -74,6 +74,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
         await expect(page.getByRole('button', { name: 'Vorsorge' })).toBeVisible();
         await page.getByRole('button', { name: 'Vorsorge' }).click();
          // verify url is https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/savings
+         // verify url is https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/savings
         await expect(page).toHaveURL('https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/pension');
     });
 
