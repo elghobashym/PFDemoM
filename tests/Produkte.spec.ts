@@ -96,7 +96,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
         // click on Versichern
         await expect(page.getByRole('button', { name: 'Versichern' })).toBeVisible();
         await page.getByRole('button', { name: 'Versichern' }).click();
-         // verify url is https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/savings
+        // verify url is https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/savings
         await expect(page).toHaveURL('https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/insurance');
     });
 
