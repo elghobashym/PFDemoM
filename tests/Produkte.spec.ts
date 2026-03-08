@@ -21,7 +21,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
     });
 
 
-    test('Verify Produkte eröffnen Kreditkarten', async ({ page }) => {
+    test('Verify Produkte eröffnen Kreditkarten @C450', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         //i need to hover over the "Produkte" link to display the dropdown menu and then click on "Kreditkarten"
         await produktePage.clickProdukteLink();
@@ -34,7 +34,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
     });
 
 
-    test('Verify Produkte eröffnen Anlegen', async ({ page }) => {
+    test('Verify Produkte eröffnen Anlegen @C451', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Anlegen
@@ -44,7 +44,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
     });
 
 
-    test('Verify Produkte eröffnen Konten', async ({ page }) => {
+    test('Verify Produkte eröffnen Konten @C452', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Konten
@@ -53,7 +53,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
         await expect(page).toHaveURL('https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/account');
     });
 
-    test('Verify Produkte eröffnen Vorsorge', async ({ page }) => {
+    test('Verify Produkte eröffnen Vorsorge @C453', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Vorsorge
@@ -62,7 +62,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
         await expect(page).toHaveURL('https://www.postfinance.ch/ap/ga/ob/html/finance/offers/product-opening/pension');
     });
 
-    test('Verify Produkte eröffnen Finanzieren', async ({ page }) => {
+    test('Verify Produkte eröffnen Finanzieren @C454', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Finanzieren
@@ -72,7 +72,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
     });
 
 
-    test('Verify Produkte eröffnen Versichern', async ({ page }) => {
+    test('Verify Produkte eröffnen Versichern @C455', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Versichern
@@ -82,7 +82,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
     });
 
 
-    test('Verify Gutscheine', async ({ page }) => {
+    test('Verify Gutscheine @C460', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Details of Gutscheine
@@ -104,7 +104,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
         await expect(page).toHaveURL('https://www.postfinance.ch/ap/ga/ob/html/finance/offers/digital-goods/show');
     });
     
-    test('Verify Fremdwährung bestellen', async ({ page }) => {
+    test('Verify Fremdwährung bestellen @C457', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Weiter of Fremdwährung bestellen
@@ -120,7 +120,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
         await expect(page).toHaveURL('https://www.postfinance.ch/ap/ga/ob/html/finance/offers/travel-funds/change-detail');
     });
 
-    test('Verify Multibanking Konten anderer Banken hinzufügen', async ({ page }) => {
+    test('Verify Multibanking Konten anderer Banken hinzufügen @C461', async ({ page }) => {
         // click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         // click on Weiter of Multibanking Konten anderer Banken hinzufügen
