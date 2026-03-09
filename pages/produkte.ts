@@ -27,6 +27,24 @@ export default class ProduktePage {
 	async clickFinanzierenButton() {
     await this.page.getByRole('button', { name: 'Finanzieren' }).click();
 }
+navItemKreditkarten() {
+    return this.page.getByLabel('Kreditkarten').getByTestId('hoverRevealContent-title');
+}
+navItemAnlegen() {
+    return this.page.getByLabel('Anlegen').getByTestId('hoverRevealContent-title');
+}
+navItemKonten() {
+    return this.page.getByLabel('Konten').getByTestId('hoverRevealContent-title');
+}
+navItemVorsorgen() {
+    return this.page.getByLabel('Vorsorgen').getByTestId('hoverRevealContent-title');
+}
+navItemFinanzieren() {
+    return this.page.getByLabel('Finanzieren').getByTestId('hoverRevealContent-title');
+}
+navItemVersichern() {
+    return this.page.getByLabel('Versichern').getByTestId('hoverRevealContent-title');
+}
 widgetDigitalGoodsTitle() {
     return this.page.locator('#widget-digitalGoods-title');
 }

@@ -14,7 +14,12 @@ test.describe('PostFinance Produkte Page Tests', () => {
         // Click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         //verify the Prodkte page has the following elements: "Konto", "Kreditkarten", "Sparen & Anlegen", "Vorsorge", "Versicherungen", "Finanzieren", "Zahlungsverkehr"
-
+        await expect(produktePage.navItemKreditkarten()).toContainText('Kreditkarten');
+        await expect(produktePage.navItemAnlegen()).toContainText('Anlegen');
+        await expect(produktePage.navItemKonten()).toContainText('Konten');
+        await expect(produktePage.navItemVorsorgen()).toContainText('Vorsorgen');
+        await expect(produktePage.navItemFinanzieren()).toContainText('Finanzieren');
+        await expect(produktePage.navItemVersichern()).toContainText('Versichern');
         await expect(produktePage.widgetDigitalGoodsTitle()).toContainText('Gutscheine');
         await expect(produktePage.widgetTravelFundsTitle()).toContainText('Fremdwährung bestellen Reisebargeld');
         await expect(produktePage.widgetMultibankingOpeningTitle()).toContainText('Multibanking Konten anderer Banken hinzufügen');
