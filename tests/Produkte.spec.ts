@@ -10,7 +10,7 @@ test.describe('PostFinance Produkte Page Tests', () => {
         await expect(page).toHaveTitle(/PostFinance/);
     });
 
-    test('Verify Produkte page', async ({ page }) => {
+    test('Verify Produkte page @C410', async ({ page }) => {
         // Click on the "Produkte" link in the navigation menu
         await produktePage.clickProdukteLink();
         //verify the Prodkte page has the following elements: "Konto", "Kreditkarten", "Sparen & Anlegen", "Vorsorge", "Versicherungen", "Finanzieren", "Zahlungsverkehr"
